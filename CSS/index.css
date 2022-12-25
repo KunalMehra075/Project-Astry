@@ -1,0 +1,360 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lora", serif;
+  scroll-behavior: smooth;
+}
+html {
+  position: relative;
+}
+body {
+  margin-top: 000px;
+}
+/* div,
+section {
+  border: 3px solid rgb(0, 0, 0);
+} */
+main {
+  z-index: -1;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*? <!----------------------------------------------- <Navbar Start > -----------------------------------------------> */
+#preloader {
+  background: rgb(255, 255, 255) url("Images/preloader.gif") no-repeat center
+    center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100000;
+}
+#logo {
+  z-index: -1;
+  position: absolute;
+  top: 149px;
+  right: 160px;
+  width: 450px;
+  margin: 10px;
+}
+#bgpencil {
+  width: 300px;
+  position: absolute;
+  top: 130px;
+  right: 30px;
+}
+nav {
+  background-color: transparent;
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  z-index: 1000000000000000000000000000000000000000000000000000;
+  top: 15px;
+  width: 100%;
+  height: 60px;
+  color: rgb(0, 0, 0);
+}
+#navlogo {
+  width: 60px;
+  border-radius: 5px;
+}
+nav > div {
+  display: grid;
+  padding: 10px;
+  place-items: center;
+}
+nav > div:nth-child(1) {
+  height: auto;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+nav > div > div {
+  cursor: pointer;
+  padding: 10px 50px;
+  border: 1px solid rgb(189, 185, 181);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 300ms ease;
+}
+nav > div div:hover {
+  border: 0.8px solid rgb(238, 211, 33);
+  box-shadow: rgba(240, 46, 170, 0.4) 3px 2px, rgba(240, 46, 170, 0.3) 3px 3px,
+    rgba(240, 46, 170, 0.2) 3px 4px, rgba(240, 46, 170, 0.1) 3px 5px,
+    rgba(240, 46, 170, 0.05) 3px 5px;
+}
+
+.progress-bar {
+  z-index: 100000000000000000000000000000000;
+  position: fixed;
+  width: 100%;
+  height: 1vh;
+}
+.filled {
+  z-index: 10000;
+  width: 0%;
+  height: 1vh;
+  border: 0px;
+  border-radius: 5px;
+  background: rgb(10, 39, 99);
+  background: linear-gradient(
+    90deg,
+    rgb(255, 0, 0) 0%,
+    rgb(255, 115, 0) 50%,
+    rgb(255, 238, 0) 100%
+  );
+}
+/*? <!----------------------------------------------- < Section Styles > -----------------------------------------------> */
+section {
+  position: relative;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 90%;
+  color: rgb(5, 5, 5);
+}
+.sectionheads {
+  position: absolute;
+  top: -110px;
+  right: 50px;
+  font-size: 10em;
+  font-weight: 700 !important;
+  color: rgba(0, 0, 0, 0.08);
+  text-transform: uppercase;
+}
+#about {
+  top: -110px;
+  right: 50px;
+  color: rgba(96, 221, 243, 0.5);
+}
+#gallery {
+  color: rgba(243, 96, 213, 0.5);
+  font-size: 7em;
+  top: -155px;
+  right: 0px;
+}
+
+/*? <!----------------------------------------------- < Main Page Start > -----------------------------------------------> */
+#struggling {
+  margin-left: 80px;
+  margin-top: 220px;
+  font-size: 55px;
+}
+#help {
+  font-weight: normal;
+  font-size: 50px;
+  margin-left: 80px;
+}
+#letsexplore {
+  z-index: 10;
+  cursor: pointer;
+  margin: 10px;
+  margin-left: 80px;
+  color: rgb(255, 115, 0);
+  border: 1px solid rgb(231, 96, 0);
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px 40px;
+  transition: all 300ms ease;
+}
+#letsexplore:hover {
+  border: 1px solid rgb(231, 204, 0);
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 133, 46, 0.3) -10px 10px, rgba(240, 149, 46, 0.2) -15px 15px,
+    rgba(240, 195, 46, 0.1) -20px 20px, rgba(240, 159, 46, 0.05) -25px 25px;
+}
+/*? <!----------------------------------------------- < About Section > -----------------------------------------------> */
+.profileheading {
+  font-size: 48px;
+}
+#portfolio {
+  position: relative;
+  margin-top: 350px;
+}
+
+#portfolio > div {
+  padding: 18px;
+  display: flex;
+  justify-content: center;
+}
+#portfolio > div > div:nth-child(1) {
+  display: grid;
+  place-items: center;
+}
+.portfolio-content {
+  margin-left: 100px;
+  padding: 15px;
+  width: 40%;
+}
+#helloiam {
+  margin: 30px auto;
+}
+#silky {
+  width: 400px;
+  box-shadow: rgba(14, 166, 27, 0.4) 5px 5px, rgba(46, 240, 69, 0.3) 10px 10px,
+    rgba(46, 240, 46, 0.2) 15px 15px, rgba(46, 240, 75, 0.1) 20px 20px,
+    rgba(95, 46, 240, 0.05) 25px 25px;
+  transition: all 350ms ease;
+}
+#silky:hover {
+  transform: scale(1.03);
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.portfolio-content label {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(255, 176, 30);
+}
+.portfolio-content p {
+  font-size: 18px;
+}
+#checkoutbio > a {
+  font-size: 18px;
+  font-weight: normal;
+  text-decoration: none;
+  color: orange;
+}
+#logos {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+#logos div {
+  cursor: pointer;
+  margin: 10px;
+  border: 1px solid rgb(198, 198, 198);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 18px 20px;
+  border-radius: 50%;
+  transition: all 350ms ease;
+}
+#logos div:hover,
+.footerimgs div:hover {
+  transform: scale(1.05);
+  border: 1px solid rgb(221, 73, 9);
+  box-shadow: rgba(209, 206, 206, 0.24) 0px 3px 8px;
+}
+#logos img {
+  width: 20px;
+}
+/*? <!----------------------------------------------- < Interests > -----------------------------------------------> */
+#interests {
+  margin-top: 300px;
+}
+#interesthead {
+  top: -120px;
+  left: 0px;
+  font-size: 7em;
+  color: rgba(96, 243, 184, 0.5);
+}
+.interestparent {
+  display: flex;
+  justify-content: center;
+}
+.interestparent > div {
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  margin: 32px;
+  min-height: 250px;
+  max-width: 300px;
+  transition: all 350ms ease;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.interestparent > div:nth-child(1) {
+  box-shadow: rgba(240, 46, 46, 0.4) -5px 5px, rgba(240, 46, 46, 0.3) -10px 10px,
+    rgba(240, 46, 46, 0.2) -15px 15px, rgba(240, 46, 46, 0.1) -20px 20px,
+    rgba(240, 46, 46, 0.05) -25px 25px;
+}
+.interestparent > div:nth-child(2) {
+  box-shadow: rgba(46, 217, 240, 0.4) -5px 5px,
+    rgba(46, 230, 240, 0.3) -10px 10px, rgba(46, 240, 217, 0.2) -15px 15px,
+    rgba(46, 240, 230, 0.1) -20px 20px, rgba(46, 240, 214, 0.05) -25px 25px;
+}
+.interestparent > div:nth-child(3) {
+  box-shadow: rgba(46, 240, 78, 0.4) -5px 5px, rgba(85, 240, 46, 0.3) -10px 10px,
+    rgba(46, 240, 56, 0.2) -15px 15px, rgba(46, 240, 69, 0.1) -20px 20px,
+    rgba(46, 240, 46, 0.05) -25px 25px;
+}
+.interestparent > div:hover {
+  transform: scale(1.01);
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+
+.interestparent > div > img {
+  width: 100px;
+}
+.interestparent > div > h1 {
+  margin: 10px 0px;
+  font-size: 32px;
+}
+/*? <!----------------------------------------------- < Footer > -----------------------------------------------> */
+
+footer {
+  width: 100%;
+  position: relative;
+  height: 200px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#footercenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerimgs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+.footerimgs > div {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgb(192, 191, 191);
+  padding: 15px 17px;
+  background-color: white;
+  transition: all 350ms ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#credit {
+  z-index: 2;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+#credit a {
+  cursor: pointer;
+  text-decoration: none;
+  border: 2px solid transparent;
+  background-color: white;
+  border-bottom: 2px solid rgb(0, 247, 255);
+  border-right: 2px solid rgb(0, 247, 255);
+  color: black;
+  transition: all 350ms ease;
+  padding: 2px;
+}
+#credit a:hover {
+  border-bottom: 2px solid rgb(255, 0, 217);
+  border-right: 2px solid rgb(221, 0, 255);
+}

@@ -1,0 +1,234 @@
+/*? <!----------------------------------------------- < Butterflies > -----------------------------------------------> */
+.butterflies {
+  position: absolute;
+}
+#purplefly {
+  width: 800px;
+  top: -640px;
+  z-index: -2;
+  right: -200px;
+  opacity: 0.05;
+}
+#redfly {
+  width: 400px;
+  top: -300px;
+  z-index: -2;
+  left: -10px;
+  transform: rotate(15deg);
+  opacity: 0.1;
+}
+#aboutfly {
+  width: 250px;
+  top: -100px;
+  z-index: -2;
+  left: 0px;
+  transform: rotate(15deg);
+  opacity: 0.08;
+}
+
+/*? <!----------------------------------------------- < Balls > -----------------------------------------------> */
+#ballsballs {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  z-index: -10;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.ballsect1 {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  z-index: -10;
+  top: 0;
+  position: absolute;
+  border-radius: 50%;
+  min-width: 50px;
+}
+.ballsect2 {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  z-index: -10;
+  top: 0;
+  position: absolute;
+  border-radius: 50%;
+}
+#ball1 {
+  top: -300px;
+  right: -100px;
+  height: 400px;
+  width: 400px;
+
+  background-color: rgba(224, 79, 79);
+}
+#ball2 {
+  top: -210px;
+  right: 100px;
+  height: 300px;
+
+  width: 300px;
+  background-color: rgb(250, 208, 58, 0.8);
+}
+#ball3 {
+  top: 610px;
+  left: 100px;
+  height: 300px;
+  width: 300px;
+
+  background-color: rgba(224, 79, 79, 0.8);
+}
+#ball4 {
+  top: 570px;
+  left: -100px;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(250, 208, 58);
+}
+#ball6 {
+  top: 70px;
+  left: 100px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(250, 208, 58, 0.8);
+}
+#ball5 {
+  left: -100px;
+  width: 400px;
+  height: 400px;
+
+  background-color: rgba(224, 79, 79, 0.8);
+}
+#ball7 {
+  top: 0;
+  right: -100px;
+  width: 400px;
+  height: 400px;
+
+  background-color: rgba(250, 208, 58, 0.8);
+}
+#ball8 {
+  top: 70px;
+  right: 100px;
+  height: 300px;
+  width: 300px;
+  background-color: rgba(224, 79, 79, 0.8);
+}
+/*? <!----------------------------------------------- <Gallery > -----------------------------------------------> */
+#gallerySection {
+  padding: 0px;
+  margin-top: 300px;
+  position: relative;
+  background-size: contain;
+}
+.Grid-slide {
+  display: grid;
+  gap: 5px;
+  padding: 50px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin: 0px 00px;
+  width: 85%;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+}
+.gridimg {
+  object-fit: contain;
+  width: 100%;
+}
+.gridglass {
+  background: url("Images/Balls.jpg");
+  z-index: -1;
+  position: absolute;
+  border-radius: 10px;
+  width: 97%;
+  height: 100%;
+  justify-content: center;
+  /* backdrop-filter: blur(3rem); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  filter: blur(3rem);
+}
+
+.Grid-slide > div {
+  font-size: 20px;
+  margin: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.Grid-slide > div:hover {
+  transform: scale(1.05);
+  z-index: 1.1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Grid-slide > div:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 350px;
+}
+.Grid-slide > div:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  height: 159px;
+}
+.Grid-slide > div:nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  height: 350px;
+}
+.Grid-slide > div:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 159px;
+}
+.Grid-slide > div:nth-child(5) {
+  grid-row-start: 4;
+  grid-row-end: 7;
+  height: 510px;
+}
+.Grid-slide > div:nth-child(7) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  height: 159px;
+}
+.Grid-slide > div:nth-child(8) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  height: 325px;
+}
+.Grid-slide > div:nth-child(9) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 8;
+  height: 510px;
+}
+.Grid-slide > div:nth-child(10) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.Grid-slide > div:nth-child(11) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  height: 159px;
+}
